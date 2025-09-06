@@ -1,9 +1,9 @@
 
 public class INICIOPAM214 {
 
-    public static void  REGLAMENTO() {
-
-    System.out.println("1.Se requiere 80% de asistencia para tener derecho a evaluación parcial y 80% de trabajos en clase.
+    public static void REGLAMENTO() {
+        System.out.println("REGLAMENTO");
+        System.out.println("1.Se requiere 80% de asistencia para tener derecho a evaluación parcial y 80% de trabajos en clase.
 2.Se permiten 10 minutos de tolerancia y si el alumno llega después de este tiempo puede permanecer en la clase, pero no se tomará la asistencia (Solamente en los horarios de
 inicio:7:00a.m y 14:00 p.m).
 3. Las faltas deberán estar justificadas mediante el correo institucional con un plazo máximo de 24 horas posteriores a la hora de falta en clase mediante correo del tutor (a),
@@ -25,10 +25,46 @@ de tutores. En caso de no solucionarse pasar a la dirección del programa educat
 15.Cualquier situación no prevista en el presente reglamento pasar directamente con la dirección del programa educativo.
 16. El día destinado a entrega de calificaciones todos los estudiantes deben estar presentes, ese día se entregarán exámenes y se brindará retroalimentación
 17.Este reglamento entra en vigor después de que se firme o se acepte por la mayoría de los estudiantes asistentes a la primera sesión de la materia, una vez firmado o aceptado por el
-50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión. ");
+50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión.");
+}
+    }
+
+    public static void LINEAMIENTOS() {
+        System.out.println("LINEAMIENTOS CLASSROOM");
+        System.out.println("1. Entregar los trabajos para su revisión.");
+        System.out.println("2. Los trabajos deben entregarse en formato PDF.");
+        System.out.println("3. Avisos de clase y entregas autorizadas con retraso tendrán calificación máxima de 5.");
+    }
+
+    public static void FECHASPARCIALES() {
+        System.out.println("FECHAS DE PARCIALES");
+        System.out.println("Primer parcial: 1 de octubre");
+        System.out.println("Segundo parcial: 5 de noviembre");
+        System.out.println("Tercer parcial: 3 de diciembre");
+        System.out.println("Examen final: 8 de diciembre");
+    }
+
+    public static void PORCENTAJESPARCIAL() {
+        System.out.println("PORCENTAJES POR PARCIAL");
+        System.out.println("Parcial 1 y 2:");
+        System.out.println(" - Conocimiento: 40%");
+        System.out.println(" - Desempeño: 20%");
+        System.out.println(" - Producto: 30%");
+        System.out.println(" - PI: 10%");
+        System.out.println("Parcial 3:");
+        System.out.println(" - Conocimiento: 20%");
+        System.out.println(" - Desempeño: 10%");
+        System.out.println(" - Producto: 40%");
+        System.out.println(" - PI: 30%");
+        System.out.println();
+    }
+
+    // Llamar a todos los métodos
+    public static void main(String[] args) {
+        INICIOPAM.REGLAMENTO();
+        INICIOPAM.LINEAMIENTOS();
+        INICIOPAM.FECHASPARCIALES();
+        INICIOPAM.PORCENTAJESPARCIAL();
+    }
 }
 
-public static void main (String [] args) {
-    INICIOPAM214.REGLAMENTO ();
-}
-}
