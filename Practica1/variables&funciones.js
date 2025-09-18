@@ -1,5 +1,9 @@
 // PRÁCTICA 1
 
-//EJERCICIO B (tradicional a flehca)
-const multiplicación = (numero) => numero*numero;
-console.log(multiplicación(12735))
+//EJERCICIO C (flecha)
+const saludoPersonalizado = (nombre, edad) =>
+{
+    return "Hola, soy  " + nombre + " y tengo" +  edad + " años.";
+} 
+
+console.log (saludoPersonalizado ("Isabella", 18));
