@@ -10,7 +10,7 @@
 const {nombre, edad, direccion:{ciudad}} = persona;
 console.log  ("Me llamo " + nombre + ", tengo " + edad + " años y vivo en " + ciudad);*/
 
-const productos = [
+/*const productos = [
     { nombre: "Laptop", precio: 12000 },
     { nombre: "Mouse", precio: 250 },
     { nombre: "Teclado", precio: 750 },
@@ -19,4 +19,13 @@ const productos = [
 
 const precio = productos.filter (productos => productos.precio > 1000)
 .map( producto => producto.nombre);
-console.log (precio);
+console.log (precio);*/
+
+const personas = [
+    { nombre: "Ana", edad: 22 },
+    { nombre: "Luis", edad: 35 },
+    { nombre: "María", edad: 28 }
+];
+
+const busca = personas.filter (peronas => personas.nombre == Luis );
+console.log (nombre);
