@@ -1,21 +1,9 @@
-//1. imports : Zona de importaciones 
-import ContadorScreens from './screens/ContadorScreens'
-//2. Main : Zona de componentes
-export default function ContadorScreens () {
- 
-  return ( 
-    
+// 1. imports : Zona de importaciones 
+import MenuScreens from './screens/MenuScreens';
+
+// 2. Main : Zona de componentes
+export default function App() { 
+  return (
+    <MenuScreens />
   );
 }
-
-//3. Estilos : Zona de los estilos y posicionamiento
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#c68decff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-
-});
