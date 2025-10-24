@@ -2,9 +2,8 @@ import { Text, StyleSheet, View, Button } from 'react-native'
 import React, { useState } from 'react'; 
 import ContadorScreens from './ContadorScreens'
 import BotonesScreen from './BotonesScreen'
-import BottomSheet from './BottomSheet';
-import WindowScreens from './WindowScreen'
-
+import BottomSheet from './BottomSheet'
+import TextInput from './TextInput'
 export default function MenuScreens() {
   const [screen, setScreen] = useState('menu');
 
@@ -13,6 +12,8 @@ export default function MenuScreens() {
       return <ContadorScreens />
     case 'Botones':
       return <BotonesScreen />
+    case 'TextInput':
+      return <TextInput />
     case 'Bottom Sheet':
       return <BottomSheet />
     case 'menu':
@@ -23,6 +24,7 @@ export default function MenuScreens() {
           <Button onPress={() => setScreen('Contador')} title='Pract: Contador' />
           <Button onPress={() => setScreen('Botones')} title='Pract: Botones' />
            <Button onPress={() => setScreen('Bottom Sheet')} title='Pract: BottomSheet' />
+        <Button onPress={() => setScreen('TextInput')} title='Pract: TextInput' />
         </View>
       )
   }
