@@ -5,6 +5,7 @@ import BotonesScreen from './BotonesScreen'
 import BottomSheet from './BottomSheet'
 import TextInput from './TextInput'
 import ImageBackground from './ImageBackground'
+import Repaso from './Repaso'
 export default function MenuScreens() {
   const [screen, setScreen] = useState('menu');
 
@@ -19,16 +20,19 @@ export default function MenuScreens() {
       return <BottomSheet />
     case 'ImageBackground':
       return <ImageBackground />
+    case 'Repaso' :
+      return <Repaso />
     case 'menu':
     default:
       return (
         <View style={styles.container}>
           <Text style={styles.titulo}>Menu de Prácticas</Text>
-          <Button onPress={() => setScreen('Contador')} title='Pract: Contador' />
-          <Button onPress={() => setScreen('Botones')} title='Pract: Botones' />
-          <Button onPress={() => setScreen('Bottom Sheet')} title='Pract: BottomSheet' />
-          <Button onPress={() => setScreen('TextInput')} title='Pract: TextInput' />
-          <Button onPress={() => setScreen('ImageBackground')} title='Pract: ImageBackground' />
+          <Button color="purple" onPress={() => setScreen('Contador')} title='Pract: Contador' />
+          <Button color="purple" onPress={() => setScreen('Botones')} title='Pract: Botones' />
+          <Button color="purple" onPress={() => setScreen('Bottom Sheet')} title='Pract: BottomSheet' />
+          <Button color="purple" onPress={() => setScreen('TextInput')} title='Pract: TextInput' />
+          <Button color="purple" onPress={() => setScreen('ImageBackground')} title='Pract: ImageBackground' />
+          <Button color="purple" onPress={() => setScreen('Repaso')} title='Pract: Repaso1' />
         </View>
       )
   }
