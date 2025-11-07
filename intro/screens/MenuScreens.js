@@ -5,9 +5,12 @@ import BotonesScreen from './BotonesScreen'
 import BottomSheet from './BottomSheet'
 import TextInput from './TextInput'
 import ImageBackground from './ImageBackground'
-import Repaso from './Repaso1'
+import Repaso from './Repaso'
 import Scrollview from './Scrollview'
 import ActivityScreen from './ActivityScreen'
+import LoginScreen from './LoginScreen'
+import InicioSesion from './InicioSesion'
+import Registro from './RegistroPrueba'
 export default function MenuScreens() {
   const [screen, setScreen] = useState('menu');
 
@@ -28,6 +31,12 @@ export default function MenuScreens() {
       return <Scrollview />;
     case 'Activity':
       return <ActivityScreen />;
+    case 'LoginScreen':
+      return <LoginScreen />
+    case 'InicioSesion':
+      return <InicioSesion />
+    case 'Registro':
+      return <Registro />
     case 'menu':
     default:
       return (
@@ -41,6 +50,12 @@ export default function MenuScreens() {
           <Button color="purple" onPress={() => setScreen('Repaso')} title='Pract: Repaso1' />
            <Button color="purple" onPress={() => setScreen('Scrollview')} title="Pract: Scrollview" />
           <Button color="purple" onPress={() => setScreen('Activity')} title="Pract: ActivityIndicator" />
+          <Button color="purple" onPress={() => setScreen('LoginScreen')} title="Pract: LognScreen" />
+          <Button color="purple" onPress={() => setScreen('InicioSesion')} title="Pract: InicioS" />
+          <Button color="purple" onPress={() => setScreen('Registro')} title="Pract: Registro" />
+          
+        
+        
         </View>
       )
   }

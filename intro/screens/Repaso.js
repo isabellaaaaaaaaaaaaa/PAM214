@@ -1,7 +1,7 @@
 import { Text, StyleSheet, View, TextInput, Alert, Button, Switch, ImageBackground, SafeAreaView } from 'react-native';
 import React, { useState, useEffect } from 'react';
 
-export default function Repaso1() {
+export default function Repaso() {
   const [showSplash, setShowSplash] = useState(true);
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
