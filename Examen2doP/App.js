@@ -1,5 +1,5 @@
-import { Text, StyleSheet, View, TextInput, Alert, Button, Switch, ImageBackground, SafeAreaView } from 'react-native';
-import React, { useState, useEffect } from 'react';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
 // Splashscreen de 4 seg, pantalla prinicpal imagen toda la pantalla, 
 // view en fondo centrado, semi tranparente, contenedor: Nombre completo
@@ -26,7 +26,7 @@ export default function App() {
     );
   }
 
-  const opciones = () => {
+   const opciones = () => {
     if (onPress(EditarPefil)) return;
     Alert.alert(
       <View style={styles.container}>
