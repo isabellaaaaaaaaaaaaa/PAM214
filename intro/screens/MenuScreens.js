@@ -11,6 +11,7 @@ import ActivityScreen from './ActivityScreen'
 import LoginScreen from './LoginScreen'
 import InicioSesion from './InicioSesion'
 import Registro from './RegistroPrueba'
+import FlatScreen from './FlatScreen'
 export default function MenuScreens() {
   const [screen, setScreen] = useState('menu');
 
@@ -37,6 +38,8 @@ export default function MenuScreens() {
       return <InicioSesion />
     case 'Registro':
       return <Registro />
+    case 'FlatScreen':
+      return <FlatScreen />
     case 'menu':
     default:
       return (
@@ -53,6 +56,7 @@ export default function MenuScreens() {
           <Button color="purple" onPress={() => setScreen('LoginScreen')} title="Pract: LognScreen" />
           <Button color="purple" onPress={() => setScreen('InicioSesion')} title="Pract: InicioS" />
           <Button color="purple" onPress={() => setScreen('Registro')} title="Pract: Registro" />
+            <Button color="purple" onPress={() => setScreen('FlatScreen')} title="Pract: Flatlist" />
           
         
         
