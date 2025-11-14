@@ -12,6 +12,7 @@ import LoginScreen from './LoginScreen'
 import InicioSesion from './InicioSesion'
 import Registro from './RegistroPrueba'
 import FlatScreen from './FlatScreen'
+import ModalScreen from './ModalScreen'
 export default function MenuScreens() {
   const [screen, setScreen] = useState('menu');
 
@@ -40,6 +41,8 @@ export default function MenuScreens() {
       return <Registro />
     case 'FlatScreen':
       return <FlatScreen />
+    case 'ModalScreen':
+      return <ModalScreen />
     case 'menu':
     default:
       return (
@@ -57,6 +60,7 @@ export default function MenuScreens() {
           <Button color="purple" onPress={() => setScreen('InicioSesion')} title="Pract: InicioS" />
           <Button color="purple" onPress={() => setScreen('Registro')} title="Pract: Registro" />
             <Button color="purple" onPress={() => setScreen('FlatScreen')} title="Pract: Flatlist" />
+            <Button color="purple" onPress={() => setScreen('ModalScreen')} title="Pract: Modal" />
           
         
         
@@ -77,3 +81,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   }
 });
+
+
