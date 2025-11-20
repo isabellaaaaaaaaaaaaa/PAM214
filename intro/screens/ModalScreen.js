@@ -1,40 +1,50 @@
-import {Text, StyleSheet, View, Modal, TouchableOpacity} from 'react-native'
-import React, {useState} from 'react'
+import React, { useState } from 'react';
+import { 
+  View, 
+  Text, 
+  StyleSheet, 
+  Modal, 
+  TouchableOpacity 
+} from 'react-native';
+
 
 export default function ModalScreen() {
-    const [showModal, setShowModal] =useState(false);
-    return(
-        <View style={styles.contenedorMain}>
-            <TouchableOpacity
-            style={styles.botonAbrir}
-            onPress={()=> setShowModal (true)}
-            activeOpacity={0.8}>
-            <Text style={styles.textoBoton} > Abrir Modal</Text>
-            </TouchableOpacity>
-            <Modal
-            visible={showModal}
-            transparent={true}
-            animationType='fade'
-            onRequestClose={()=> setShowModal(false)}>
-            
-            <View style={styles.contenedorMain}>
-                <View styles={styles.modal}>
-                    <Text style={styles.titulo} > HOLA!!</Text>
-                    <Text style={styles.mensaje} >esto es un modal!!</Text>
-                    <TouchableOpacity 
-                    style={styles.botonCerrar}
-                    onPress={()=>setShowModal(false)}
-                    activeOpacity={0.8}
+  const [showModal, setShowModal] = useState(false);
 
-                    >
-                    <Text 
-                    style={styles.textoerrar}>Cerrar</Text>
-                    </TouchableOpacity>
-                </View> 
-            </View>
-            </Modal>
+  return (
+    <View style={styles.contenedorMain}>
+
+      <TouchableOpacity style={styles.botonAbrir} onPress={() => setShowModal(true)} 
+      activeOpacity={0.8}>
+        <Text style={styles.textoBoton}>Abrir Modal</Text>
+      </TouchableOpacity>
+
+
+      <Modal
+        visible={showModal}
+        transparent={true}
+        animationType= "slide"
+        onRequestClose={() => setShowModal(false)}
+      >
+        <View style={styles.contenedorModal}>
+          <View style={styles.modal}>
+            <Text style={styles.titulo}>¡Holaa!</Text>
+            <Text style={styles.mensaje}>
+              Esto es un Modal
+            </Text>
+
+            <TouchableOpacity
+              style={styles.botonCerrar}
+              onPress={() => setShowModal(false)}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.textoCerrar}>Cerrar</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-    );
+      </Modal>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
