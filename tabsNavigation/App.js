@@ -14,7 +14,7 @@ const ProfileStack = createNativeStackNavigator();
 
 function ProfileStackScreen() {
   return (
-    <ProfileStack.Navigator //screenOptions={{ headerShown: true }} esto ayuda a ocultar la barra de arriba q se pone por defecto el <- detalles, lo ocultaria.
+    <ProfileStack.Navigator //screenOptions={{ headerShown: true }} esto ayuda a ocultar la barra de arriba q se pone por defecto el <- detalles, lo quita
     >
       <ProfileStack.Screen name="ProfileMain" component={Profile} />
       <ProfileStack.Screen name="Detalle" component={Detalle} />
